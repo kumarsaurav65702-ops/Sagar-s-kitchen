@@ -24,6 +24,20 @@
 ::-webkit-scrollbar{
 display:none;
 }
+@keyframes slideLeft {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-left {
+  animation: slideLeft 0.6s ease-out;
+}
 </style>
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -75,54 +89,68 @@ display:none;
  <section id="menu" class="py-10 px-5 ">
   <h2 class="text-2xl font-semibold text-center text-white mb-8">Menu</h2>
 
-  <div class="flex gap-6 overflow-x-auto scroll-smooth pb-4">
+  <div class="flex slide-left gap-6 overflow-x-auto scroll-smooth pb-4">
 
-    <div class="bg-white p-5 flex flex-col gap-3 rounded-xl min-w-80 min-h-[400px]">
-        <div class="img bg-green-600 h-3/4"></div>
-        <div class="text-2xl bg-red-600 h-16 text-center text-white">
-            <h1>Roti, Sabzi, Dal, Rice</h1>
+    <div class="bg-zinc-800 p-5 flex flex-col gap-3 rounded-xl min-w-80 min-h-[400px]">
+        <div class="img rounded-xl overflow-hidden bg-green-600 aspect-square">
+  <img class="h-full w-full  object-cover" src="https://t4.ftcdn.net/jpg/01/15/48/41/360_F_115484118_OFxvDHelhwIRAkNhXIfCZS6Py0eUyWJD.jpg" alt="">
+        </div>
+        <div class="text-2xl  h-16 text-center text-white">
+            <h1>Mix Thali</h1>
         </div>
     </div>
 
-     <div class="bg-white p-5 flex flex-col gap-3 rounded-xl min-w-80 min-h-[400px]">
-        <div class="img bg-green-600 h-3/4"></div>
-        <div class="text-2xl bg-red-600 h-16 text-center text-white">
-            <h1>Roti, Sabzi, Dal, Rice</h1>
+     <div class="bg-zinc-800 p-5 flex flex-col gap-3 rounded-xl min-w-80 min-h-[400px]">
+        <div class="img rounded-xl overflow-hidden bg-green-600 aspect-square">
+        <img class="h-full w-full object-cover" src="https://t4.ftcdn.net/jpg/08/06/21/93/360_F_806219362_LiOsUcCtWAA9nlb4PyiA83bHFSHG1wGJ.jpg" alt="">
+        </div>
+        <div class="text-2xl h-16 text-center text-white">
+            <h1>Veg/Non-veg Thali</h1>
         </div>
     </div>
 
-     <div class="bg-white p-5 flex flex-col gap-3 rounded-xl min-w-80 min-h-[400px]">
-        <div class="img bg-green-600 h-3/4"></div>
-        <div class="text-2xl bg-red-600 h-16 text-center text-white">
-            <h1>Roti, Sabzi, Dal, Rice</h1>
+     <div class="bg-zinc-800 p-5 flex flex-col gap-3 rounded-xl min-w-80 min-h-[400px]">
+        <div class="img rounded-xl overflow-hidden bg-green-600 aspect-square">
+        <img class="h-full w-full object-cover" src="https://imgs.search.brave.com/keeaq0cFUa1wmeXp25MUO_q3nzmrtHSdyN2awSR_PRE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA4LzAwLzIzLzA1/LzM2MF9GXzgwMDIz/MDUwNV9CcHY5ODNx/UTB5OHlPazhld0pl/Ym1VbFhEV2hRYUtS/Yy5qcGc" alt="">
+        </div>
+        <div class="text-2xl h-16 text-center text-white">
+            <h1>Puri Sabji</h1>
         </div>
     </div>
 
-     <div class="bg-white p-5 flex flex-col gap-3 rounded-xl min-w-80 min-h-[400px]">
-        <div class="img bg-green-600 h-3/4"></div>
-        <div class="text-2xl bg-red-600 h-16 text-center text-white">
-            <h1>Roti, Sabzi, Dal, Rice</h1>
+     <div class="bg-zinc-800 p-5 flex flex-col gap-3 rounded-xl min-w-80 min-h-[400px]">
+        <div class="img rounded-xl overflow-hidden bg-green-600 aspect-square">
+        <img class="h-full w-full object-cover" src="https://imgs.search.brave.com/NmD1zKW3xATsBCqfnOqrxJR_TtfLhmNwxAHtnQKldws/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMTEv/ODMzLzkwNi9zbWFs/bC9yaWNlLWtoZWVy/LW9yLWZpcm5pLW9y/LWNoYXdhbC1raS1r/aGlyLWlzLWEtcHVk/ZGluZy1mcm9tLWlu/ZGlhbi1zdWJjb250/aW5lbnQtbWFkZS1i/eS1ib2lsaW5nLW1p/bGstc3VnYXItYW5k/LXJpY2Utc2VydmVk/LWluLWEtYm93bC1w/aG90by5qcGc" alt="">
+        </div>
+        <div class="text-2xl h-16 text-center text-white">
+            <h1>Kheer</h1>
         </div>
     </div>
 
-     <div class="bg-white p-5 flex flex-col gap-3 rounded-xl min-w-80 min-h-[400px]">
-        <div class="img bg-green-600 h-3/4"></div>
-        <div class="text-2xl bg-red-600 h-16 text-center text-white">
-            <h1>Roti, Sabzi, Dal, Rice</h1>
+     <div class="bg-zinc-800 p-5 flex flex-col gap-3 rounded-xl min-w-80 min-h-[400px]">
+        <div class="img rounded-xl overflow-hidden bg-green-600 aspect-square">
+        <img class="h-full w-full object-cover" src="https://imgs.search.brave.com/oqSyDRn_qg2-HLMYtk-M_lty2H0LIa8k0NVXUhImAFE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWct/Z2xvYmFsLmNwY2Ru/LmNvbS9yZWNpcGVz/LzhhZGI2NDY2NzA3/ZDExZmMvNjgweDk2/NGNxOTAvJUUwJUE0/JUI4JUUwJUE0JUE0/JUUwJUE0JUE0LSVF/MCVBNCVBQSVFMCVB/NCVCMC1zYXR0dS1w/dXJpLXJlY2lwZS1p/bi1oaW5kaS0lRTAl/QTQlQjAlRTAlQTQl/QjglRTAlQTQlQUEt/JUUwJUE0JUFFJUUw/JUE0JTk2JUUwJUE0/JUFGLSVFMCVBNCVB/NCVFMCVBNCVCOCVF/MCVBNCVCNSVFMCVB/NCVCMC5qcGc" alt="">
+        </div>
+        <div class="text-2xl h-16 text-center text-white">
+            <h1>Sattu Paratha</h1>
         </div>
     </div>
 
-     <div class="bg-white p-5 flex flex-col gap-3 rounded-xl min-w-80 min-h-[400px]">
-        <div class="img bg-green-600 h-3/4"></div>
-        <div class="text-2xl bg-red-600 h-16 text-center text-white">
-            <h1>Roti, Sabzi, Dal, Rice</h1>
+     <div class="bg-zinc-800 p-5 flex flex-col gap-3 rounded-xl min-w-80 min-h-[400px]">
+        <div class="img rounded-xl overflow-hidden bg-green-600 aspect-square">
+        <img class="h-full w-full object-cover" src="https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/butter_paneer_curry_98394_16x9.jpg" alt="">
+        </div>
+        <div class="text-2xl h-16 text-center text-white">
+            <h1>Matar Paneer</h1>
         </div>
     </div>
 
-     <div class="bg-white p-5 flex flex-col gap-3 rounded-xl min-w-80 min-h-[400px]">
-        <div class="img bg-green-600 h-3/4"></div>
-        <div class="text-2xl bg-red-600 h-16 text-center text-white">
-            <h1>Roti, Sabzi, Dal, Rice</h1>
+     <div class="bg-zinc-800 p-5 flex flex-col gap-3 rounded-xl min-w-80 min-h-[400px]">
+        <div class="img rounded-xl overflow-hidden bg-green-600 aspect-square">
+        <img class="h-full w-full object-cover" src="https://media.gettyimages.com/id/561260549/photo/bread-pakoras-and-onion-bhaji-with-tomato-ketchup.jpg?s=612x612&w=0&k=20&c=sSIYkZDjhWpqIHCaoebvbUyJKlv8wYaQVhQ4CQOSj-A=" alt="">
+        </div>
+        <div class="text-2xl h-16 text-center text-white">
+            <h1>Bread Pakoda</h1>
         </div>
     </div>
    
