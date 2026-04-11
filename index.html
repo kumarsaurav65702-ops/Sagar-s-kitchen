@@ -38,12 +38,23 @@ display:none;
 .slide-left {
   animation: slideLeft 0.6s ease-out;
 }
+header{
+  background-image: url('hero.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 </style>
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
 
 <body class="bg-neutral-900  font-[Poppins]">
+
+  
+
+
+
     <div class="nav flex justify-between   h-28 p-1">
         <div class="logo   h-32 w-40 overflow-hidden">
             <img class="h-full w-full object-cover" src="logo.png.png" alt="">
@@ -60,6 +71,15 @@ display:none;
         <a href="#gallery" class="hover:text-yellow-500">Gallery</a>
         <a href="#contact" class="hover:text-yellow-500">Contact</a>
     </nav>
+
+  <header class="min-h-[300px] w-full bg-[url('hero.png')] flex-col bg-contain no-repeat bg-center items-center flex justify-center text-white ">
+    <h1 class="text-2xl text-stone-700 font-bold mt-16 font-weight-bold rounded-lg">
+        Rajdhani Tiffin & Catering
+    </h1>
+    <p class="text-lg text-stone-500 italic font-serif mb-32">
+        Ghar ka swad, har din!
+    </p>
+</header>
 
     <!-- Service section -->
     <section id="services" class="py-10 slide-down text-white px-5">
@@ -91,7 +111,7 @@ display:none;
 
   <div class="flex slide-left gap-6 overflow-x-auto scroll-smooth pb-4">
 
-    <div class="bg-zinc-800 p-5 flex flex-col gap-3 rounded-xl min-w-80 min-h-[400px]">
+    <div class="bg-zinc-800 p-5 flex flex-col gap-3 rounded-xl min-w-[300px] h-[300px]">
         <div class="img rounded-xl overflow-hidden bg-green-600 aspect-square">
   <img class="h-full w-full  object-cover" src="https://t4.ftcdn.net/jpg/01/15/48/41/360_F_115484118_OFxvDHelhwIRAkNhXIfCZS6Py0eUyWJD.jpg" alt="">
         </div>
@@ -100,7 +120,7 @@ display:none;
         </div>
     </div>
 
-     <div class="bg-zinc-800 p-5 flex flex-col gap-3 rounded-xl min-w-80 min-h-[400px]">
+     <div class="bg-zinc-800 p-5 flex flex-col gap-3 rounded-xl min-w-[300px] h-[300px]">
         <div class="img rounded-xl overflow-hidden bg-green-600 aspect-square">
         <img class="h-full w-full object-cover" src="https://t4.ftcdn.net/jpg/08/06/21/93/360_F_806219362_LiOsUcCtWAA9nlb4PyiA83bHFSHG1wGJ.jpg" alt="">
         </div>
@@ -109,7 +129,7 @@ display:none;
         </div>
     </div>
 
-     <div class="bg-zinc-800 p-5 flex flex-col gap-3 rounded-xl min-w-80 min-h-[400px]">
+     <div class="bg-zinc-800 p-5 flex flex-col gap-3 rounded-xl min-w-[300px] h-[300px]">
         <div class="img rounded-xl overflow-hidden bg-green-600 aspect-square">
         <img class="h-full w-full object-cover" src="https://imgs.search.brave.com/keeaq0cFUa1wmeXp25MUO_q3nzmrtHSdyN2awSR_PRE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA4LzAwLzIzLzA1/LzM2MF9GXzgwMDIz/MDUwNV9CcHY5ODNx/UTB5OHlPazhld0pl/Ym1VbFhEV2hRYUtS/Yy5qcGc" alt="">
         </div>
@@ -118,7 +138,7 @@ display:none;
         </div>
     </div>
 
-     <div class="bg-zinc-800 p-5 flex flex-col gap-3 rounded-xl min-w-80 min-h-[400px]">
+     <div class="bg-zinc-800 p-5 flex flex-col gap-3 rounded-xl min-w-[300px] h-[300px]">
         <div class="img rounded-xl overflow-hidden bg-green-600 aspect-square">
         <img class="h-full w-full object-cover" src="https://imgs.search.brave.com/NmD1zKW3xATsBCqfnOqrxJR_TtfLhmNwxAHtnQKldws/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMTEv/ODMzLzkwNi9zbWFs/bC9yaWNlLWtoZWVy/LW9yLWZpcm5pLW9y/LWNoYXdhbC1raS1r/aGlyLWlzLWEtcHVk/ZGluZy1mcm9tLWlu/ZGlhbi1zdWJjb250/aW5lbnQtbWFkZS1i/eS1ib2lsaW5nLW1p/bGstc3VnYXItYW5k/LXJpY2Utc2VydmVk/LWluLWEtYm93bC1w/aG90by5qcGc" alt="">
         </div>
@@ -127,7 +147,7 @@ display:none;
         </div>
     </div>
 
-     <div class="bg-zinc-800 p-5 flex flex-col gap-3 rounded-xl min-w-80 min-h-[400px]">
+     <div class="bg-zinc-800 p-5 flex flex-col gap-3 rounded-xl min-w-[300px] h-[300px]">
         <div class="img rounded-xl overflow-hidden bg-green-600 aspect-square">
         <img class="h-full w-full object-cover" src="https://imgs.search.brave.com/oqSyDRn_qg2-HLMYtk-M_lty2H0LIa8k0NVXUhImAFE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWct/Z2xvYmFsLmNwY2Ru/LmNvbS9yZWNpcGVz/LzhhZGI2NDY2NzA3/ZDExZmMvNjgweDk2/NGNxOTAvJUUwJUE0/JUI4JUUwJUE0JUE0/JUUwJUE0JUE0LSVF/MCVBNCVBQSVFMCVB/NCVCMC1zYXR0dS1w/dXJpLXJlY2lwZS1p/bi1oaW5kaS0lRTAl/QTQlQjAlRTAlQTQl/QjglRTAlQTQlQUEt/JUUwJUE0JUFFJUUw/JUE0JTk2JUUwJUE0/JUFGLSVFMCVBNCVB/NCVFMCVBNCVCOCVF/MCVBNCVCNSVFMCVB/NCVCMC5qcGc" alt="">
         </div>
@@ -136,7 +156,7 @@ display:none;
         </div>
     </div>
 
-     <div class="bg-zinc-800 p-5 flex flex-col gap-3 rounded-xl min-w-80 min-h-[400px]">
+     <div class="bg-zinc-800 p-5 flex flex-col gap-3 rounded-xl min-w-[300px] h-[300px]">
         <div class="img rounded-xl overflow-hidden bg-green-600 aspect-square">
         <img class="h-full w-full object-cover" src="https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/butter_paneer_curry_98394_16x9.jpg" alt="">
         </div>
@@ -145,7 +165,7 @@ display:none;
         </div>
     </div>
 
-     <div class="bg-zinc-800 p-5 flex flex-col gap-3 rounded-xl min-w-80 min-h-[400px]">
+     <div class="bg-zinc-800 p-5 flex flex-col gap-3 rounded-xl min-w-[300px] h-[300px]">
         <div class="img rounded-xl overflow-hidden bg-green-600 aspect-square">
         <img class="h-full w-full object-cover" src="https://media.gettyimages.com/id/561260549/photo/bread-pakoras-and-onion-bhaji-with-tomato-ketchup.jpg?s=612x612&w=0&k=20&c=sSIYkZDjhWpqIHCaoebvbUyJKlv8wYaQVhQ4CQOSj-A=" alt="">
         </div>
@@ -165,6 +185,41 @@ Download Menu
 </div>
   
 </section>
+
+<!-- // Gallery section -->
+
+<section id="gallery" class="py-10 px-5">
+  <h2 class="text-2xl font-semibold text-center text-white mb-8">Food Gallery</h2>
+
+  <div class="flex gap-6 overflow-x-auto scroll-smooth pb-4">
+
+    <img class="min-w-[300px] h-[300px] object-cover rounded-xl"
+    src="https://t4.ftcdn.net/jpg/01/15/48/41/360_F_115484118_OFxvDHelhwIRAkNhXIfCZS6Py0eUyWJD.jpg">
+
+    <img class="min-w-[300px] h-[300px] object-cover rounded-xl"
+    src="https://t4.ftcdn.net/jpg/08/06/21/93/360_F_806219362_LiOsUcCtWAA9nlb4PyiA83bHFSHG1wGJ.jpg">
+
+    <img class="min-w-[300px] h-[300px] object-cover rounded-xl"
+    src="https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/butter_paneer_curry_98394_16x9.jpg">
+
+    <img class="min-w-[300px] h-[300px] object-cover rounded-xl"
+    src="https://imgs.search.brave.com/keeaq0cFUa1wmeXp25MUO_q3nzmrtHSdyN2awSR_PRE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA4LzAwLzIzLzA1/LzM2MF9GXzgwMDIz/MDUwNV9CcHY5ODNx/UTB5OHlPazhld0pl/Ym1VbFhEV2hRYUtS/Yy5qcGc">
+
+  </div>
+</section>
+
+<section id="contact" class="py-10 px-5">
+  <h2 class="text-2xl font-semibold text-white text-center mb-6">Contact & Location</h2>
+
+  <p class="text-center text-gray-400">📞 Call: 9973972268</p>
+
+  <div class="mt-6">
+    <iframe class="w-full h-[300px] rounded-xl"
+    src="https://maps.google.com/maps?q=Patna&t=&z=13&ie=UTF8&iwloc=&output=embed">
+    </iframe>
+  </div>
+</section>
+
 </body>
 
 </html>
